@@ -1,9 +1,52 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Hello, World!</title>
+<style>
+  .pink-button {
+    background-color: pink;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+  .blue-button {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+</style>
 </head>
-<body style="background-color: pink; text-align: center;">
-    <h1 style="color: white;">Hello, World!</h1>
+<body>
+
+<a class="pink-button" href="/home">/home</a>
+<a class="blue-button" href="/blue">/blue</a>
+
+<p id="message"></p>
+
+<script>
+  function showPinkHello() {
+    document.getElementById("message").style.color = "pink";
+    document.getElementById("message").innerHTML = "Hello World";
+  }
+
+  function showBlueHello() {
+    document.getElementById("message").style.color = "blue";
+    document.getElementById("message").innerHTML = "Hello World";
+  }
+</script>
+
 </body>
 </html>
